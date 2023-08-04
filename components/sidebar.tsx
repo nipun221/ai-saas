@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import { LayoutDashboard, MessageSquare, ImageIcon, VideoIcon, Music, Code, Settings } from "lucide-react";
+import { LayoutDashboard, MessageSquare, ImageIcon, VideoIcon, Music, Code, Settings, GithubIcon } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 const montserrat = Montserrat({ weight: "600", subsets: ["latin"] });
@@ -83,6 +83,18 @@ const Sidebar = () => {
                         </div>
                     </Link>
                 ))}
+            </div>
+            <div className="space-y-1">
+                <Link
+                    href={"https://github.com/nipun221/ai-saas"}
+                    key={"https://github.com/nipun221/ai-saas"}
+                    className={cn("text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lg transition", pathname === "https://github.com/nipun221/ai-saas" ? "text-white bg-white/10" : "text-zinc-400")}
+                >
+                    <div className="flex items-center flex-1">
+                        <GithubIcon className="h-5 w-5 mr-3 text-teal-700"/>
+                        Github Repository
+                    </div>
+                </Link>
             </div>
         </div>
     </div>
