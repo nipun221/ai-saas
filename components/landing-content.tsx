@@ -1,6 +1,9 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { GithubIcon, InstagramIcon } from "lucide-react";
 
 const testimonials = [
   {

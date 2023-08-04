@@ -33,13 +33,13 @@ export const LandingNavbar = () => {
             </h1>
         </Link>
         <div className="flex items-center gap-x-2">
-            <Link href={"https://www.instagram.com/v_a_t_s_52/"}>
+            <Link href={"https://www.instagram.com/v_a_t_s_52/"} className="hidden md:block">
                 <Button variant="mode" className="rounded-full">
                     <InstagramIcon className="h-5 w-5 mr-2"/>
                     Instagram
                 </Button>
             </Link>
-            <Link href={"https://github.com/nipun221"}>
+            <Link href={"https://github.com/nipun221"} className="hidden md:block">
                 <Button variant="mode" className="rounded-full">
                     <GithubIcon className="h-5 w-5 mr-2"/>
                     Github
